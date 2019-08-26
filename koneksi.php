@@ -9,7 +9,7 @@ try {
 
     $pdo = new PDO("mysql:host=$host;dbname=$dbnm", $user, $pass);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Koneksi Berhasil<br>";
+    echo "Koneksi Berhasil";
 
 } catch (PDOException $e) {
     echo "Gagal Koneksi " . $e->getMessage();
